@@ -1,0 +1,22 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto cdc8255e1c5b4c0fb322a4e8f7ca4624 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Multiplication_tb_behav xil_defaultlib.Multiplication_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.MultiplicandRegister [\MultiplicandRegister(n=24)\]
+Compiling architecture behavioral of entity xil_defaultlib.MultiplierRegister [\MultiplierRegister(n=24)\]
+Compiling architecture behavioral of entity xil_defaultlib.ProductRegister [\ProductRegister(n=24)\]
+Compiling architecture behavioral of entity xil_defaultlib.Adder [\Adder(n=24)\]
+Compiling architecture structural of entity xil_defaultlib.Multiplicator [\Multiplicator(n=24)\]
+Compiling architecture behavioral of entity xil_defaultlib.IEEE_Multiplication [ieee_multiplication_default]
+Compiling architecture behavioral of entity xil_defaultlib.multiplication_tb
+Built simulation snapshot Multiplication_tb_behav

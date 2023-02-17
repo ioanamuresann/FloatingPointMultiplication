@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/multiplicator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MultiplicandRegister
+INFO: [VRFC 10-307] analyzing entity MultiplierRegister
+INFO: [VRFC 10-307] analyzing entity ProductRegister
+INFO: [VRFC 10-307] analyzing entity Adder
+INFO: [VRFC 10-307] analyzing entity Multiplicator
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEE_Multiplication.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity IEEE_Multiplication
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/new/Multiplication_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Multiplication_tb

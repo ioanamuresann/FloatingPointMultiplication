@@ -1,0 +1,691 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jan 18 18:44:15 2023
+# Process ID: 12156
+# Current directory: C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.runs/synth_1
+# Command line: vivado.exe -log Control.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Control.tcl
+# Log file: C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.runs/synth_1/Control.vds
+# Journal file: C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Control.tcl -notrace
+Command: synth_design -top Control -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1692 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 284.695 ; gain = 74.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/control.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/Debouncer.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'Freq_div' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/new/Freq_Div.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Freq_div' (1#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/new/Freq_Div.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (2#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/Debouncer.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'NumberRegister' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/NumberRegister.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'CounterModulo_4' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/CounterModulo_4.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'CounterModulo_4' (3#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/CounterModulo_4.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'dmux_2to1_2bits' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/dmux_2to1_2bits.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'dmux_2to1_2bits' (4#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/dmux_2to1_2bits.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'CounterModulo_10' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/CounterModulo_10.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'CounterModulo_10' (5#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/CounterModulo_10.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'CounterModulo_5' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/CounterModulo_5.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'CounterModulo_5' (6#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/CounterModulo_5.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'NumberRegister' (7#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/NumberRegister.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'BCDtoIEEE' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDtoIEEE.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'IntegerBCDtoBinary' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDtoBinary.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'BCDDividerByTwo' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDtoBinary.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'BCDDividerByTwo' (8#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDtoBinary.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'IntegerBCDtoBinary' (9#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDtoBinary.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'FractionalBCDtoBinary' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDtoBinary.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'BCDMultiplierByTwoForSmallNumbers' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDtoBinary.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'CarryAdder' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/new/CarryAdder.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'OneDigitAdder' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/new/CarryAdder.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'OneDigitAdder' (10#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/new/CarryAdder.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'CarryAdder' (11#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/new/CarryAdder.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'BCDMultiplierByTwoForSmallNumbers' (12#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDtoBinary.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'FractionalBCDtoBinary' (13#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDtoBinary.vhd:160]
+INFO: [Synth 8-256] done synthesizing module 'BCDtoIEEE' (14#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDtoIEEE.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'Main' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/new/Main.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'IEEE_Multiplication' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEE_Multiplication.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'Multiplicator' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/multiplicator.vhd:159]
+	Parameter n bound to: 24 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'MultiplicandRegister' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/multiplicator.vhd:19]
+	Parameter n bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MultiplicandRegister' (15#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/multiplicator.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'MultiplierRegister' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/multiplicator.vhd:57]
+	Parameter n bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MultiplierRegister' (16#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/multiplicator.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'ProductRegister' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/multiplicator.vhd:95]
+	Parameter n bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ProductRegister' (17#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/multiplicator.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'Adder' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/multiplicator.vhd:132]
+	Parameter n bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Adder' (18#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/multiplicator.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'Multiplicator' (19#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/multiplicator.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'IEEE_Multiplication' (20#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEE_Multiplication.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Main' (21#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/new/Main.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'IEEEtoBCD' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:411]
+INFO: [Synth 8-638] synthesizing module 'IEEEtoBinary' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'IEEEtoBinary' (22#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'IntegerBinaryToBCD' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'BCDAdder' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:50]
+INFO: [Synth 8-3491] module 'BCDOneDigitAdder' declared at 'C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:5' bound to instance 'BCDDigitAdder0' of component 'BCDOneDigitAdder' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'BCDOneDigitAdder' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'BCDOneDigitAdder' (23#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:14]
+INFO: [Synth 8-3491] module 'BCDOneDigitAdder' declared at 'C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:5' bound to instance 'BCDDigitAdder1' of component 'BCDOneDigitAdder' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:66]
+INFO: [Synth 8-3491] module 'BCDOneDigitAdder' declared at 'C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:5' bound to instance 'BCDDigitAdder2' of component 'BCDOneDigitAdder' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:67]
+INFO: [Synth 8-3491] module 'BCDOneDigitAdder' declared at 'C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:5' bound to instance 'BCDDigitAdder3' of component 'BCDOneDigitAdder' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'BCDAdder' (24#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/BCDAdder.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'IntegerBinaryToBCD' (25#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'FractionalBinaryToBCD' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'FractionalBinaryToBCD' (26#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:248]
+WARNING: [Synth 8-614] signal 'BCDinteger' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:430]
+WARNING: [Synth 8-614] signal 'BCDfractional' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:430]
+WARNING: [Synth 8-3848] Net sign in module/entity IEEEtoBCD does not have driver. [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:404]
+INFO: [Synth 8-256] done synthesizing module 'IEEEtoBCD' (27#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:411]
+INFO: [Synth 8-638] synthesizing module 'x7seg' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/segment7.vhd:16]
+WARNING: [Synth 8-614] signal 'dp_location' is read in the process but is not in the sensitivity list [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/segment7.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'x7seg' (28#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/segment7.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Control' (29#1) [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/control.vhd:27]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[31]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[30]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[29]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[28]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[27]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[26]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[25]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[24]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[23]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[22]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[21]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[20]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[19]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[18]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[17]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[16]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[15]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[14]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[13]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[12]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[11]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[10]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[9]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[8]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[7]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[6]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[5]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[4]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[3]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[2]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[1]
+WARNING: [Synth 8-3331] design FractionalBinaryToBCD has unconnected port binary_fractional_46bits[0]
+WARNING: [Synth 8-3331] design IEEEtoBinary has unconnected port IEEE[31]
+WARNING: [Synth 8-3331] design IEEEtoBCD has unconnected port sign
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 322.738 ; gain = 112.879
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 322.738 ; gain = 112.879
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/constrs_1/imports/src/Basys-3-Master.xdc]
+Finished Parsing XDC File [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/constrs_1/imports/src/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/constrs_1/imports/src/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Control_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Control_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 628.773 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 628.773 ; gain = 418.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 628.773 ; gain = 418.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 628.773 ; gain = 418.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "output_digits_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_digits_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_digits_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_digits_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "binaryCombinedNumber" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'BCD_signal_reg' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:437]
+WARNING: [Synth 8-327] inferring latch for variable 'FractionalPointLocation_signal_reg' [C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.srcs/sources_1/imports/src/IEEEtoBCD.vhd:438]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 628.773 ; gain = 418.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     52 Bit       Adders := 2     
+	   2 Input     48 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 5     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 8     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 16    
+	   2 Input      4 Bit       Adders := 40    
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               60 Bit    Registers := 2     
+	               52 Bit    Registers := 2     
+	               48 Bit    Registers := 2     
+	               46 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
+	               19 Bit    Registers := 3     
+	               16 Bit    Registers := 14    
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 5     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 6     
+	                4 Bit    Registers := 25    
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 45    
++---Muxes : 
+	   8 Input     60 Bit        Muxes := 2     
+	   2 Input     60 Bit        Muxes := 8     
+	   2 Input     52 Bit        Muxes := 10    
+	   2 Input     48 Bit        Muxes := 2     
+	   2 Input     46 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 7     
+	   2 Input     19 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 16    
+	   4 Input     16 Bit        Muxes := 4     
+	   2 Input     14 Bit        Muxes := 6     
+	   4 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 29    
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 63    
+	  23 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Control 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+Module Freq_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module CounterModulo_4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module dmux_2to1_2bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 2     
+Module CounterModulo_10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module CounterModulo_5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module BCDDividerByTwo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module IntegerBCDtoBinary 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module OneDigitAdder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+Module FractionalBCDtoBinary 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     52 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               52 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     52 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module BCDtoIEEE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               60 Bit    Registers := 1     
+	               46 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   8 Input     60 Bit        Muxes := 1     
+	   2 Input     60 Bit        Muxes := 4     
+	   2 Input     46 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	  23 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module MultiplicandRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MultiplierRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ProductRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 1     
+Module Adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+Module IEEE_Multiplication 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+Module IEEEtoBinary 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               46 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     46 Bit        Muxes := 2     
+	   4 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module BCDOneDigitAdder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+Module IntegerBinaryToBCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module FractionalBinaryToBCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module IEEEtoBCD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 1     
+Module x7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Debouncer1/FREQ/CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Debouncer2/FREQ/CLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Debouncer3/FREQ/CLK0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design IEEEtoBCD has unconnected port sign
+WARNING: [Synth 8-3331] design IEEEtoBCD has unconnected port IEEE[31]
+INFO: [Synth 8-3886] merging instance 'BCDtoIEEE:/IntegerBCDtoBIN/BCDDivByTwo/input_signal_reg[3]' (FDE) to 'BCDtoIEEE:/IntegerBCDtoBIN/BCDDivByTwo/input_signal_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BCDtoIEEE:/IntegerBCDtoBIN/BCDDivByTwo/input_signal_reg[1]' (FDE) to 'BCDtoIEEE:/IntegerBCDtoBIN/BCDDivByTwo/input_signal_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BCDtoIEEE:/IntegerBCDtoBIN/BCDDivByTwo/input_signal_reg[2]' (FDE) to 'BCDtoIEEE:/IntegerBCDtoBIN/BCDDivByTwo/input_signal_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (BCDtoIEEE:/\IntegerBCDtoBIN/BCDDivByTwo/input_signal_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (transformIEEEtoBCD_component/\BinaryIntToBCD/BCDnumberToAdd_reg[11] )
+INFO: [Synth 8-3886] merging instance 'transformIEEEtoBCD_component/BinaryFracToBCD/BCDnumberToAdd_reg[7]' (FDRE) to 'transformIEEEtoBCD_component/BinaryFracToBCD/BCDnumberToAdd_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (transformIEEEtoBCD_component/\BinaryFracToBCD/BCDnumberToAdd_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (IntegerBCDtoBIN/BCDDivByTwo/input_signal_reg[0]) is unused and will be removed from module BCDtoIEEE.
+WARNING: [Synth 8-3332] Sequential element (BinaryIntToBCD/BCDnumberToAdd_reg[11]) is unused and will be removed from module IEEEtoBCD.
+WARNING: [Synth 8-3332] Sequential element (BinaryFracToBCD/BCDnumberToAdd_reg[11]) is unused and will be removed from module IEEEtoBCD.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 628.773 ; gain = 418.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 628.773 ; gain = 418.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 657.926 ; gain = 448.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 659.922 ; gain = 450.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 659.922 ; gain = 450.063
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 659.922 ; gain = 450.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 659.922 ; gain = 450.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 659.922 ; gain = 450.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 659.922 ; gain = 450.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 659.922 ; gain = 450.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    76|
+|3     |LUT1   |   204|
+|4     |LUT2   |   121|
+|5     |LUT3   |   493|
+|6     |LUT4   |   177|
+|7     |LUT5   |   249|
+|8     |LUT6   |   528|
+|9     |MUXF7  |    15|
+|10    |FDCE   |   109|
+|11    |FDRE   |   990|
+|12    |FDSE   |    34|
+|13    |LD     |    19|
+|14    |IBUF   |    12|
+|15    |OBUF   |    18|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------+------------------------+------+
+|      |Instance                       |Module                  |Cells |
++------+-------------------------------+------------------------+------+
+|1     |top                            |                        |  3046|
+|2     |  Debouncer1                   |Debouncer               |    54|
+|3     |    FREQ                       |Freq_div_17             |    49|
+|4     |  Debouncer2                   |Debouncer_0             |    54|
+|5     |    FREQ                       |Freq_div_16             |    49|
+|6     |  Debouncer3                   |Debouncer_1             |    54|
+|7     |    FREQ                       |Freq_div                |    49|
+|8     |  Main_component               |Main                    |   261|
+|9     |    IEEE_Mul                   |IEEE_Multiplication     |   261|
+|10    |      MUL                      |Multiplicator           |   236|
+|11    |        MultiplicandReg        |MultiplicandRegister    |    97|
+|12    |        MultiplierReg          |MultiplierRegister      |    31|
+|13    |        ProductReg             |ProductRegister         |   108|
+|14    |  Number1_comp                 |NumberRegister          |   109|
+|15    |    cifra1                     |CounterModulo_10_10     |    20|
+|16    |    cifra2                     |CounterModulo_10_11     |    16|
+|17    |    cifra3                     |CounterModulo_10_12     |    12|
+|18    |    cifra4                     |CounterModulo_10_13     |    12|
+|19    |    decimalP                   |CounterModulo_5_14      |    33|
+|20    |    nextD                      |CounterModulo_4_15      |    16|
+|21    |  Number2_comp                 |NumberRegister_2        |    86|
+|22    |    cifra1                     |CounterModulo_10        |    16|
+|23    |    cifra2                     |CounterModulo_10_7      |    12|
+|24    |    cifra3                     |CounterModulo_10_8      |     8|
+|25    |    cifra4                     |CounterModulo_10_9      |     8|
+|26    |    decimalP                   |CounterModulo_5         |    30|
+|27    |    nextD                      |CounterModulo_4         |    12|
+|28    |  SSD                          |x7seg                   |    59|
+|29    |  transformBCDtoIEEE1          |BCDtoIEEE               |   968|
+|30    |    FractionalBCDtoBIN         |FractionalBCDtoBinary_4 |   445|
+|31    |    IntegerBCDtoBIN            |IntegerBCDtoBinary_5    |   179|
+|32    |      BCDDivByTwo              |BCDDividerByTwo_6       |    89|
+|33    |  transformBCDtoIEEE2          |BCDtoIEEE_3             |   968|
+|34    |    FractionalBCDtoBIN         |FractionalBCDtoBinary   |   445|
+|35    |    IntegerBCDtoBIN            |IntegerBCDtoBinary      |   179|
+|36    |      BCDDivByTwo              |BCDDividerByTwo         |    89|
+|37    |  transformIEEEtoBCD_component |IEEEtoBCD               |   363|
+|38    |    BinaryFracToBCD            |FractionalBinaryToBCD   |    99|
+|39    |    BinaryIntToBCD             |IntegerBinaryToBCD      |   130|
+|40    |    IEEEtoBin                  |IEEEtoBinary            |   115|
++------+-------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 659.922 ; gain = 450.063
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 659.922 ; gain = 143.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 659.922 ; gain = 450.063
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  LD => LDCE: 19 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+107 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 659.922 ; gain = 450.063
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User/Desktop/SSC/Proiect/Proiect1/Proiect1.runs/synth_1/Control.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 659.922 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 18 18:44:55 2023...

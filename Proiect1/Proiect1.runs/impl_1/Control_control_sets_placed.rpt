@@ -1,0 +1,159 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Thu Jan 19 08:40:15 2023
+| Host         : DESKTOP-JQO8C5T running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Control_control_sets_placed.rpt
+| Design       : Control
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    88 |
+| Unused register locations in slices containing registers |   288 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             117 |           49 |
+| No           | No                    | Yes                    |              61 |           18 |
+| No           | Yes                   | No                     |             249 |           98 |
+| Yes          | No                    | No                     |             411 |          107 |
+| Yes          | No                    | Yes                    |              48 |           12 |
+| Yes          | Yes                   | No                     |             266 |           84 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------+--------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+|                    Clock Signal                   |                                  Enable Signal                                 |                              Set/Reset Signal                              | Slice Load Count | Bel Load Count |
++---------------------------------------------------+--------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                                    |                                                                                | load_bcd1                                                                  |                1 |              1 |
+|  nextDigit2_signal                                |                                                                                | reset_IBUF                                                                 |                1 |              2 |
+|  nextDigit1_signal_reg_n_0                        |                                                                                | reset_IBUF                                                                 |                1 |              2 |
+|  Debouncer1/FREQ/CLK                              |                                                                                |                                                                            |                1 |              3 |
+|  Debouncer2/FREQ/CLK                              |                                                                                |                                                                            |                2 |              3 |
+|  Debouncer3/FREQ/CLK                              |                                                                                |                                                                            |                1 |              3 |
+|  decimalPointMover2_signal                        |                                                                                | reset_IBUF                                                                 |                1 |              3 |
+|  decimalPointMover1_signal_reg_n_0                |                                                                                | reset_IBUF                                                                 |                1 |              3 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/IntegerBCDtoBIN/BCDDivByTwo/output_digits[2][3]_i_1__0_n_0 |                                                                            |                1 |              4 |
+|  Number1_comp/nextD/CLK                           |                                                                                | reset_IBUF                                                                 |                1 |              4 |
+|  Number1_comp/nextD/tmp_reg[0]_0                  |                                                                                | reset_IBUF                                                                 |                1 |              4 |
+|  Number1_comp/nextD/tmp_reg[0]_1                  |                                                                                | reset_IBUF                                                                 |                1 |              4 |
+|  Number1_comp/nextD/tmp_reg[3]_0                  |                                                                                | reset_IBUF                                                                 |                2 |              4 |
+|  Number2_comp/nextD/CLK                           |                                                                                | reset_IBUF                                                                 |                1 |              4 |
+|  Number2_comp/nextD/tmp_reg[0]_0                  |                                                                                | reset_IBUF                                                                 |                1 |              4 |
+|  Number2_comp/nextD/tmp_reg[0]_1                  |                                                                                | reset_IBUF                                                                 |                1 |              4 |
+|  Number2_comp/nextD/tmp_reg[3]_0                  |                                                                                | reset_IBUF                                                                 |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/IntegerBCDtoBIN/BCDDivByTwo/output_digits[3]_1             |                                                                            |                1 |              4 |
+|  clk_IBUF_BUFG                                    |                                                                                | transformBCDtoIEEE2/IntegerBCDtoBIN/divider_load_signal_reg_n_0            |                2 |              4 |
+|  clk_IBUF_BUFG                                    |                                                                                | transformBCDtoIEEE1/IntegerBCDtoBIN/divider_load_signal_reg_n_0            |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/IntegerBCDtoBIN/BCDDivByTwo/current_divident               | transformBCDtoIEEE2/IntegerBCDtoBIN/BCDDivByTwo/input_signal[7]_i_1__4_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                                    | load_bcd1_reg_n_0                                                              | Number1_comp/decimalP/BCDinteger_reg[11]                                   |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/IntegerBCDtoBIN/BCDDivByTwo/output_digits[0][3]_i_1_n_0    |                                                                            |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/IntegerBCDtoBIN/BCDDivByTwo/output_digits[1]_2             |                                                                            |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/IntegerBCDtoBIN/BCDDivByTwo/output_digits[2][3]_i_1_n_0    |                                                                            |                1 |              4 |
+|  clk_IBUF_BUFG                                    |                                                                                | transformIEEEtoBCD_component/IEEEtoBin/SR[0]                               |                2 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/IntegerBCDtoBIN/BCDDivByTwo/output_digits[3]_1             |                                                                            |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/IntegerBCDtoBIN/BCDDivByTwo/step_reg[0]_0[0]               | load_bcd1_reg_n_0                                                          |                2 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/IntegerBCDtoBIN/posInInt_reg[0][0]                         | load_bcd1_reg_n_0                                                          |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformIEEEtoBCD_component/BinaryFracToBCD/step[3]_i_1__4_n_0                | transformIEEEtoBCD_component/IEEEtoBin/SR[0]                               |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformIEEEtoBCD_component/BinaryIntToBCD/step[3]_i_1__5_n_0                 | transformIEEEtoBCD_component/IEEEtoBin/SR[0]                               |                1 |              4 |
+|  clk_IBUF_BUFG                                    | load_bcd1_reg_n_0                                                              | Number1_comp/decimalP/BCDfractional_reg[0]                                 |                1 |              4 |
+|  clk_IBUF_BUFG                                    | load_bcd1_reg_n_0                                                              | Number1_comp/decimalP/BCDinteger_reg[12]                                   |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/IntegerBCDtoBIN/posInInt_reg[0][0]                         | load_bcd2                                                                  |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/IntegerBCDtoBIN/BCDDivByTwo/step_reg[0]_0[0]               | load_bcd2                                                                  |                1 |              4 |
+|  clk_IBUF_BUFG                                    | load_bcd2                                                                      | Number2_comp/decimalP/BCDfractional_reg[0]                                 |                1 |              4 |
+|  clk_IBUF_BUFG                                    | load_bcd2                                                                      | Number2_comp/decimalP/BCDinteger_reg[11]                                   |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/IntegerBCDtoBIN/BCDDivByTwo/current_divident               | transformBCDtoIEEE1/IntegerBCDtoBIN/BCDDivByTwo/input_signal[7]_i_1__3_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                                    | load_bcd2                                                                      | Number2_comp/decimalP/BCDinteger_reg[12]                                   |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/IntegerBCDtoBIN/BCDDivByTwo/output_digits[0][3]_i_1__0_n_0 |                                                                            |                1 |              4 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/IntegerBCDtoBIN/BCDDivByTwo/output_digits[1]_2             |                                                                            |                1 |              4 |
+|  clk_IBUF_BUFG                                    |                                                                                | load_IBUF                                                                  |                2 |              5 |
+|  clk_IBUF_BUFG                                    |                                                                                | currentDigit[3]_i_1_n_0                                                    |                1 |              5 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/FractionalBCDtoBIN/step[5]_i_1__0_n_0                      | load_bcd1_reg_n_0                                                          |                1 |              6 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/FractionalBCDtoBIN/iterator_reg[0][0]                      | load_bcd2                                                                  |                2 |              6 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/FractionalBCDtoBIN/posInFractional_reg[0][0]               | load_bcd1_reg_n_0                                                          |                3 |              6 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/FractionalBCDtoBIN/iterator_reg[0][0]                      | load_bcd1_reg_n_0                                                          |                2 |              6 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/FractionalBCDtoBIN/step[5]_i_1__1_n_0                      | load_bcd2                                                                  |                1 |              6 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/FractionalBCDtoBIN/posInFractional_reg[0][0]               | load_bcd2                                                                  |                3 |              6 |
+|  clk_IBUF_BUFG                                    | load_bcd2                                                                      | Number2_comp/decimalP/BCDinteger_reg[7]                                    |                3 |              8 |
+|  clk_IBUF_BUFG                                    | load_bcd1_reg_n_0                                                              | Number1_comp/decimalP/BCDinteger_reg[7]                                    |                2 |              8 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/FractionalBCDtoBIN/E[0]                                    | transformBCDtoIEEE1/FractionalBCDtoBIN/exponent                            |                3 |              8 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/FractionalBCDtoBIN/E[0]                                    | transformBCDtoIEEE2/FractionalBCDtoBIN/exponent                            |                3 |              8 |
+|  clk_IBUF_BUFG                                    | load_bcd2                                                                      |                                                                            |                4 |             12 |
+|  clk_IBUF_BUFG                                    | load_bcd1_reg_n_0                                                              |                                                                            |                3 |             12 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/IntegerBCDtoBIN/BCDDivByTwo/current_divident               |                                                                            |                2 |             12 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/IntegerBCDtoBIN/BCDDivByTwo/current_divident               |                                                                            |                2 |             12 |
+|  clk_IBUF_BUFG                                    | transformIEEEtoBCD_component/BinaryFracToBCD/p_1_in                            | transformIEEEtoBCD_component/IEEEtoBin/SR[0]                               |                6 |             13 |
+|  clk_IBUF_BUFG                                    | transformIEEEtoBCD_component/IEEEtoBin/gtOp                                    | transformIEEEtoBCD_component/IEEEtoBin/binary_integer_signal[6]            |                2 |             13 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/IntegerBCDtoBIN/E[0]                                       |                                                                            |                5 |             14 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/IntegerBCDtoBIN/E[0]                                       |                                                                            |                5 |             14 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/FractionalBCDtoBIN/input_signal[15]_i_1__4_n_0             |                                                                            |                6 |             15 |
+|  clk_IBUF_BUFG                                    | transformIEEEtoBCD_component/BinaryIntToBCD/p_1_in                             | transformIEEEtoBCD_component/IEEEtoBin/SR[0]                               |                8 |             15 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/FractionalBCDtoBIN/input_signal[15]_i_1__1_n_0             |                                                                            |                4 |             15 |
+|  clk_IBUF_BUFG                                    | transformIEEEtoBCD_component/BinaryFracToBCD/result[15]_i_1__0_n_0             | transformIEEEtoBCD_component/IEEEtoBin/SR[0]                               |                6 |             16 |
+|  clk_IBUF_BUFG                                    | transformIEEEtoBCD_component/BinaryIntToBCD/result[15]_i_1_n_0                 | transformIEEEtoBCD_component/IEEEtoBin/SR[0]                               |                8 |             16 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/IntegerBCDtoBIN/BCDDivByTwo/E[0]                           |                                                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/IntegerBCDtoBIN/BCDDivByTwo/E[0]                           |                                                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                    |                                                                                | Debouncer3/FREQ/count[18]_i_1__1_n_0                                       |                5 |             18 |
+|  clk_IBUF_BUFG                                    |                                                                                | Debouncer1/FREQ/count[18]_i_1_n_0                                          |                5 |             18 |
+|  clk_IBUF_BUFG                                    |                                                                                | Debouncer2/FREQ/count[18]_i_1__0_n_0                                       |                5 |             18 |
+|  transformIEEEtoBCD_component/BinaryIntToBCD/E[0] |                                                                                |                                                                            |                6 |             19 |
+|  clk_IBUF_BUFG                                    |                                                                                | clr_IBUF                                                                   |                5 |             19 |
+|  clk_IBUF_BUFG                                    |                                                                                | load_bcd2                                                                  |               10 |             22 |
+|  clk_IBUF_BUFG                                    |                                                                                | load_bcd1_reg_n_0                                                          |               10 |             22 |
+|  clk_IBUF_BUFG                                    | transformIEEEtoBCD_component/IEEEtoBin/step                                    | load_finalConv_reg_n_0                                                     |                4 |             23 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/FractionalBCDtoBIN/mantissa                                | transformBCDtoIEEE2/FractionalBCDtoBIN/exponent                            |                6 |             23 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/FractionalBCDtoBIN/mantissa                                | transformBCDtoIEEE1/FractionalBCDtoBIN/exponent                            |                6 |             23 |
+|  clk_IBUF_BUFG                                    |                                                                                | Main_component/IEEE_Mul/MUL/ProductReg/content_reg[47]_0                   |                6 |             24 |
+|  clk_IBUF_BUFG                                    | transformIEEEtoBCD_component/IEEEtoBin/step                                    |                                                                            |               12 |             31 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/FractionalBCDtoBIN/binaryFractionalNumberCopy_reg[0][0]    |                                                                            |               11 |             46 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/FractionalBCDtoBIN/binaryFractionalNumberCopy_reg[0][0]    |                                                                            |               11 |             46 |
+|  clk_IBUF_BUFG                                    | Main_component/IEEE_Mul/MUL/MultiplierReg/content_reg[47]_0                    | Main_component/IEEE_Mul/MUL/ProductReg/content_reg[47]_0                   |               12 |             48 |
+|  clk_IBUF_BUFG                                    |                                                                                | transformBCDtoIEEE1/FractionalBCDtoBIN/binary_signal[51]_i_1_n_0           |               24 |             52 |
+|  clk_IBUF_BUFG                                    |                                                                                | transformBCDtoIEEE2/FractionalBCDtoBIN/binary_signal[51]_i_1__0_n_0        |               24 |             52 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE1/FractionalBCDtoBIN/binaryCombinedNumber_reg[59]            |                                                                            |               14 |             59 |
+|  clk_IBUF_BUFG                                    | transformBCDtoIEEE2/FractionalBCDtoBIN/binaryCombinedNumber_reg[59]            |                                                                            |               14 |             59 |
+|  clk_IBUF_BUFG                                    |                                                                                |                                                                            |               39 |             89 |
++---------------------------------------------------+--------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     2 |
+| 3      |                     5 |
+| 4      |                    33 |
+| 5      |                     2 |
+| 6      |                     6 |
+| 8      |                     4 |
+| 12     |                     4 |
+| 13     |                     2 |
+| 14     |                     2 |
+| 15     |                     3 |
+| 16+    |                    24 |
++--------+-----------------------+
+
+

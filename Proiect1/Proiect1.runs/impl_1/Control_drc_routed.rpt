@@ -1,0 +1,162 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Thu Jan 19 08:40:39 2023
+| Host         : DESKTOP-JQO8C5T running 64-bit major release  (build 9200)
+| Command      : report_drc -file Control_drc_routed.rpt -pb Control_drc_routed.pb -rpx Control_drc_routed.rpx
+| Design       : Control
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 17
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PDRC-153    | Warning  | Gated clock check                                           | 9          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 8          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net Number1_comp/nextD/CLK is a gated clock net sourced by a combinational pin Number1_comp/nextD/tmp[3]_i_2/O, cell Number1_comp/nextD/tmp[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Number1_comp/nextD/tmp_reg[0]_0 is a gated clock net sourced by a combinational pin Number1_comp/nextD/tmp[3]_i_2__0/O, cell Number1_comp/nextD/tmp[3]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net Number1_comp/nextD/tmp_reg[0]_1 is a gated clock net sourced by a combinational pin Number1_comp/nextD/tmp[3]_i_2__1/O, cell Number1_comp/nextD/tmp[3]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net Number1_comp/nextD/tmp_reg[3]_0 is a gated clock net sourced by a combinational pin Number1_comp/nextD/tmp[3]_i_2__5/O, cell Number1_comp/nextD/tmp[3]_i_2__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net Number2_comp/nextD/CLK is a gated clock net sourced by a combinational pin Number2_comp/nextD/tmp[3]_i_2__2/O, cell Number2_comp/nextD/tmp[3]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net Number2_comp/nextD/tmp_reg[0]_0 is a gated clock net sourced by a combinational pin Number2_comp/nextD/tmp[3]_i_2__3/O, cell Number2_comp/nextD/tmp[3]_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net Number2_comp/nextD/tmp_reg[0]_1 is a gated clock net sourced by a combinational pin Number2_comp/nextD/tmp[3]_i_2__4/O, cell Number2_comp/nextD/tmp[3]_i_2__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net Number2_comp/nextD/tmp_reg[3]_0 is a gated clock net sourced by a combinational pin Number2_comp/nextD/tmp[3]_i_2__6/O, cell Number2_comp/nextD/tmp[3]_i_2__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net transformIEEEtoBCD_component/BinaryIntToBCD/E[0] is a gated clock net sourced by a combinational pin transformIEEEtoBCD_component/BinaryIntToBCD/done_OBUF_inst_i_1/O, cell transformIEEEtoBCD_component/BinaryIntToBCD/done_OBUF_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Number1_comp/nextD/tmp[3]_i_2 is driving clock pin of 4 cells. This could lead to large hold time violations. First few involved cells are:
+    Number1_comp/cifra1/tmp_reg[0] {FDCE}
+    Number1_comp/cifra1/tmp_reg[1] {FDCE}
+    Number1_comp/cifra1/tmp_reg[2] {FDCE}
+    Number1_comp/cifra1/tmp_reg[3] {FDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Number1_comp/nextD/tmp[3]_i_2__0 is driving clock pin of 4 cells. This could lead to large hold time violations. First few involved cells are:
+    Number1_comp/cifra2/tmp_reg[0] {FDCE}
+    Number1_comp/cifra2/tmp_reg[1] {FDCE}
+    Number1_comp/cifra2/tmp_reg[2] {FDCE}
+    Number1_comp/cifra2/tmp_reg[3] {FDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Number1_comp/nextD/tmp[3]_i_2__1 is driving clock pin of 4 cells. This could lead to large hold time violations. First few involved cells are:
+    Number1_comp/cifra3/tmp_reg[3] {FDCE}
+    Number1_comp/cifra3/tmp_reg[2] {FDCE}
+    Number1_comp/cifra3/tmp_reg[0] {FDCE}
+    Number1_comp/cifra3/tmp_reg[1] {FDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Number1_comp/nextD/tmp[3]_i_2__5 is driving clock pin of 4 cells. This could lead to large hold time violations. First few involved cells are:
+    Number1_comp/cifra4/tmp_reg[3] {FDCE}
+    Number1_comp/cifra4/tmp_reg[2] {FDCE}
+    Number1_comp/cifra4/tmp_reg[0] {FDCE}
+    Number1_comp/cifra4/tmp_reg[1] {FDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Number2_comp/nextD/tmp[3]_i_2__2 is driving clock pin of 4 cells. This could lead to large hold time violations. First few involved cells are:
+    Number2_comp/cifra1/tmp_reg[0] {FDCE}
+    Number2_comp/cifra1/tmp_reg[1] {FDCE}
+    Number2_comp/cifra1/tmp_reg[2] {FDCE}
+    Number2_comp/cifra1/tmp_reg[3] {FDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Number2_comp/nextD/tmp[3]_i_2__3 is driving clock pin of 4 cells. This could lead to large hold time violations. First few involved cells are:
+    Number2_comp/cifra2/tmp_reg[0] {FDCE}
+    Number2_comp/cifra2/tmp_reg[1] {FDCE}
+    Number2_comp/cifra2/tmp_reg[2] {FDCE}
+    Number2_comp/cifra2/tmp_reg[3] {FDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#7 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Number2_comp/nextD/tmp[3]_i_2__4 is driving clock pin of 4 cells. This could lead to large hold time violations. First few involved cells are:
+    Number2_comp/cifra3/tmp_reg[3] {FDCE}
+    Number2_comp/cifra3/tmp_reg[2] {FDCE}
+    Number2_comp/cifra3/tmp_reg[0] {FDCE}
+    Number2_comp/cifra3/tmp_reg[1] {FDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#8 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Number2_comp/nextD/tmp[3]_i_2__6 is driving clock pin of 4 cells. This could lead to large hold time violations. First few involved cells are:
+    Number2_comp/cifra4/tmp_reg[0] {FDCE}
+    Number2_comp/cifra4/tmp_reg[2] {FDCE}
+    Number2_comp/cifra4/tmp_reg[1] {FDCE}
+    Number2_comp/cifra4/tmp_reg[3] {FDCE}
+
+Related violations: <none>
+
+

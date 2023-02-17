@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../Proiect1.srcs/sources_1/imports/src/multiplicator.vhd"
+vhdl xil_defaultlib  "../../../Proiect1.srcs/sources_1/imports/src/IEEE_Multiplication.vhd"
+vhdl xil_defaultlib  "../../../Proiect1.srcs/sources_1/new/Multiplication_tb.vhd"
+
+# Do not sort compile order
+nosort
